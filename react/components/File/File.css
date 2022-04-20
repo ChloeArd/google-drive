@@ -19,3 +19,7 @@
     padding: 2px;
     text-align: center;
 }
+
+.File:hover {
+    background-color: #F1F3F4;
+}

@@ -9,3 +9,7 @@
     align-items: center;
     width: 20%;
 }
+
+.Directory:hover {
+    background-color: #F1F3F4;
+}
