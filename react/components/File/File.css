@@ -1,0 +1,21 @@
+
+.File {
+    border: 1px solid #E3E4E7;
+    border-radius: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.File > img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.File > p {
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+}
