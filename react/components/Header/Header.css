@@ -1,0 +1,53 @@
+
+.logoDrive {
+    color: #a5d28b;
+    font-size: 35px;
+    margin: 0 5px;
+}
+
+header {
+    border-bottom: 1px solid #E3E4E7;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 20px;
+    color: #5F6368;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.pictureUser {
+    background-color: #a5d28b;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+#logoSearch, #logoSliders {
+    background-color: #F1F3F4;
+    color: #5F6368;
+    padding: 13.5px;
+    font-size: 15px;
+}
+
+#logoSearch {
+    border-radius: 10px 0 0 10px;
+    margin-left: 150px;
+}
+
+#logoSliders {
+    border-radius: 0 10px 10px 0;
+}
+
+#inputSearch {
+    border: none;
+    background-color: #F1F3F4;
+    padding: 15px;
+    font-size: 15px;
+    width: 90%;
+}

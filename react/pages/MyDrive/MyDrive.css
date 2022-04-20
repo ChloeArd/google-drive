@@ -1,0 +1,28 @@
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#sectionTop {
+    width: 100%;
+    font-size: 14px;
+    border-bottom: 1px solid #E3E4E7;
+    height: 55px;
+}
+
+#sectionBottom {
+    width: 100%;
+}
+
+.title {
+    color: #72757A;
+    font-size: 12px;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 85%;
+}
