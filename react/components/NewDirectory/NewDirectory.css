@@ -1,0 +1,46 @@
+
+.modal {
+    display: none;
+    position: absolute;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    flex-direction: column;
+    top: 20%;
+    left: 30%;
+}
+
+input {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 18px;
+    margin: 15px 0;
+    background-color: white;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #a5d28b;
+    border: 1px solid #a5d28b;
+}
+
+input[type="submit"]:hover {
+    color: #a5d28b;
+    background-color: white;
+}
+
+#cancel {
+    color: #AAAAAA;
+    padding: 8px;
+    border: 1px solid #AAAAAA;
+    text-align: center;
+    font-size: 18px;
+}
+
+#cancel:hover {
+    background-color: #AAAAAA;
+    color: white;
+}

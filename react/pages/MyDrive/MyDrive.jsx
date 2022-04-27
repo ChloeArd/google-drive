@@ -3,7 +3,10 @@ import {Menu} from "../../components/Menu/Menu";
 import {Directory} from "../../components/Directory/Directory";
 import {File} from "../../components/File/File";
 import {Header} from "../../components/Header/Header";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import {NewDirectory} from "../../components/NewDirectory/NewDirectory";
+import {ImportDirectory} from "../../components/ImportDirectory/ImportDirectory";
+import {ImportFile} from "../../components/ImportFile/ImportFile";
 
 export const MyDrive = function () {
 
@@ -35,6 +38,9 @@ export const MyDrive = function () {
                         </div>
                     </section>
                 </div>
+                <NewDirectory />
+                <ImportFile />
+                <ImportDirectory />
             </main>
         </>
 
