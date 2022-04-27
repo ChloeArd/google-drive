@@ -6,15 +6,15 @@ export const LogoutGoogle = function () {
     const clientId = "583129085044-bk7cr6ns7s7q327e2qokssd091jvbuvo.apps.googleusercontent.com";
 
     const onSuccess = () => {
-        alert("Logout made successfully");
-        window.location.replace("http://localhost:8000/home");
+        alert("Vous êtes bien déconnecté !");
+        window.location.replace("http://localhost:8000");
     }
 
     return(
         <>
             <GoogleLogout
                 clientId={clientId}
-                buttonText="S'inscrire avec Google"
+                buttonText="Se déconnecter"
                 onLogoutSuccess={onSuccess}
                 className="logoutGoogle"
             ></GoogleLogout>

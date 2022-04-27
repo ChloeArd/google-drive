@@ -4,7 +4,7 @@
     font-weight: bold;
 }
 
-#inscription, #registration {
+#inscription {
     margin-top: 5%;
     width: 100%;
     display: flex;
@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-#registration > h2, #inscription > h2 {
+#inscription > h2 {
     color: #a5d28b;
 }
 

@@ -3,8 +3,13 @@ import {Menu} from "../../components/Menu/Menu";
 import {Directory} from "../../components/Directory/Directory";
 import {File} from "../../components/File/File";
 import {Header} from "../../components/Header/Header";
+import {useState} from "react";
+import {LogoutGoogle} from "../../components/LogoutGoogle/LogoutGoogle";
 
 export const MyDrive = function () {
+
+    const [sessionGoogle, setSessionGoogle] = useState(JSON.parse(sessionStorage.getItem("infoGoogle")));
+    console.log(sessionGoogle);
 
     return (
         <>

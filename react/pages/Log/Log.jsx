@@ -10,11 +10,6 @@ export const Log = function () {
         <div className="Log">
             <h1><FontAwesomeIcon className="logoDrive" icon={faGoogleDrive}/>Drive</h1>
             <div id="containerRegIns" className="flexRow">
-                <div id="registration">
-                    <h2>Inscris-toi !</h2>
-                    <LogoutGoogle />
-
-                </div>
                 <div id="inscription">
                     <h2>Connecte-toi !</h2>
                     <LoginGoogle />
