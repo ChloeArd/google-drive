@@ -2,7 +2,6 @@ import "./Log.css";
 import {faGoogleDrive} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {LoginGoogle} from "../../components/LoginGoogle/LoginGoogle";
-import {LogoutGoogle} from "../../components/LogoutGoogle/LogoutGoogle";
 
 export const Log = function () {
 

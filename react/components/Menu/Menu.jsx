@@ -4,6 +4,7 @@ import {faPlus, faAngleRight, faLaptop, faUserGroup} from "@fortawesome/free-sol
 import { faGoogleDrive } from '@fortawesome/free-brands-svg-icons'
 import { faStar, faClock, faTrashCan} from "@fortawesome/free-regular-svg-icons";
 import {LogoutGoogle} from "../LogoutGoogle/LogoutGoogle";
+import {New} from "../New/New";
 
 
 
@@ -18,7 +19,7 @@ export const Menu = function () {
             <a><FontAwesomeIcon icon={faClock} className="icon" /> Récents</a>
             <a><FontAwesomeIcon icon={faStar} className="icon" /> Suivis</a>
             <a><FontAwesomeIcon icon={faTrashCan} className="icon" /> Corbeille</a>
-            <LogoutGoogle />
+            <New />
         </div>
     );
 }

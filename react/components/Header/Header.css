@@ -22,10 +22,33 @@ header {
 }
 
 .pictureUser {
-    background-color: #a5d28b;
     border-radius: 50%;
     height: 50px;
     width: 50px;
+}
+
+.pictureUser:hover {
+    opacity: 0.7;
+}
+
+.pictureUser2 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+#accountGoogle {
+    display: none;
+    background-color: white;
+    padding: 25px;
+    flex-direction: column;
+    border-radius: 10px;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    z-index: 4;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #logoSearch, #logoSliders {
