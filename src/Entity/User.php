@@ -9,7 +9,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ORM\Table(name: '`user`')]
-class User implements UserInterface, PasswordAuthenticatedUserInterface
+class User
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -24,12 +24,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column(type: 'string', length: 180, unique: true)]
     private $email;
-
-    #[ORM\Column(type: 'json')]
-    private $roles = [];
-
-    #[ORM\Column(type: 'string')]
-    private $password;
 
     #[ORM\Column(type: 'string')]
     private $id_google;
@@ -47,50 +41,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setEmail(string $email): self
     {
         $this->email = $email;
-
-        return $this;
-    }
-
-    /**
-     * A visual identifier that represents this user.
-     *
-     * @see UserInterface
-     */
-    public function getUserIdentifier(): string
-    {
-        return (string) $this->email;
-    }
-
-    /**
-     * @see UserInterface
-     */
-    public function getRoles(): array
-    {
-        $roles = $this->roles;
-        // guarantee every user at least has ROLE_USER
-        $roles[] = 'ROLE_USER';
-
-        return array_unique($roles);
-    }
-
-    public function setRoles(array $roles): self
-    {
-        $this->roles = $roles;
-
-        return $this;
-    }
-
-    /**
-     * @see PasswordAuthenticatedUserInterface
-     */
-    public function getPassword(): string
-    {
-        return $this->password;
-    }
-
-    public function setPassword(string $password): self
-    {
-        $this->password = $password;
 
         return $this;
     }
@@ -144,14 +94,5 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         $this->id_google = $id_google;
         return $this;
-    }
-
-    /**
-     * @see UserInterface
-     */
-    public function eraseCredentials()
-    {
-        // If you store any temporary, sensitive data on the user, clear it here
-        // $this->plainPassword = null;
     }
 }

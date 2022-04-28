@@ -10,7 +10,6 @@ use Doctrine\ORM\ORMException;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class UserController extends AbstractController
@@ -36,7 +35,7 @@ class UserController extends AbstractController
     public function addUser(Request $request): JsonResponse
     {
         $payload = json_decode($request->getContent(), true);
-        if(!isset($payload['name']) || !isset($payload['email']) || !isset($payload['image']) || !isset($payload['roles']) || !isset($payload['password']) || !isset($payload['id_google'])) {
+         if (!isset($payload['name']) || !isset($payload['email']) || !isset($payload['image']) || !isset($payload['id_google'])) {
             return $this->returnError('Il manque des paramètres');
         }
 
