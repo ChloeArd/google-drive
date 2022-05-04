@@ -39,7 +39,19 @@ class UserController extends AbstractController
             return $this->returnError('Il manque des paramètres');
         }
 
+         $find = $this->userRepository->findBy(["id_google" => $payload['id_google']]);
+
+         if ($find !== null) {
+             return $this->returnError("Vous êtes bien déjà en BDD");
+         }
+
         $user = new User();
+        $user
+            ->setName($payload['name'])
+            ->setEmail($payload['email'])
+            ->setImage($payload['image'])
+            ->setIdGoogle($payload['id_google'])
+        ;
         $this->entityManager->persist($user);
         $this->entityManager->flush();
         return $this->json($user);

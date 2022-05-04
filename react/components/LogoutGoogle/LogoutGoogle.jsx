@@ -7,6 +7,7 @@ export const LogoutGoogle = function () {
 
     const onSuccess = () => {
         alert("Vous êtes bien déconnecté !");
+        sessionStorage.setItem("infoGoogle", []);
         window.location.replace("http://localhost:8000");
     }
 
