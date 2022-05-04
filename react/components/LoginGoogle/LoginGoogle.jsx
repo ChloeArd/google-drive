@@ -1,6 +1,5 @@
 import "./LoginGoogle.css";
 import GoogleLogin from "react-google-login";
-import {UseFetch} from "../../hooks/UseFetch";
 import {useEffect, useState} from "react";
 
 
@@ -11,8 +10,6 @@ export const LoginGoogle = function () {
     const clientId = "583129085044-bk7cr6ns7s7q327e2qokssd091jvbuvo.apps.googleusercontent.com";
 
     let IDGoogle = [];
-
-    //const {post, error} = UseFetch();
 
     const onSuccess = (res) => {
         console.log("[Login Success]");
@@ -40,11 +37,11 @@ export const LoginGoogle = function () {
         }, []);
     }
 
-    const onFailure = (res) => {
-        console.log("[Login failed] res:", res);
+    const onFailure = () => {
+        console.log("[Login failed]");
     }
 
-    return /*error ? (<span>Erreur de récupération des données de l'utilisateur </span>) :*/ (
+    return (
         <>
             <GoogleLogin
                 clientId={clientId}

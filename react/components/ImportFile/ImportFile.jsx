@@ -1,4 +1,5 @@
 import "./ImportFile.css";
+import { Document } from 'react-pdf';
 
 export const ImportFile = function () {
 

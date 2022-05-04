@@ -7,6 +7,7 @@ import {useEffect, useState} from "react";
 import {NewDirectory} from "../../components/NewDirectory/NewDirectory";
 import {ImportDirectory} from "../../components/ImportDirectory/ImportDirectory";
 import {ImportFile} from "../../components/ImportFile/ImportFile";
+import {PDF} from "../../components/PDF/PDF";
 
 export const MyDrive = function () {
 
@@ -38,6 +39,7 @@ export const MyDrive = function () {
                         </div>
                     </section>
                 </div>
+                <PDF />
                 <NewDirectory />
                 <ImportFile />
                 <ImportDirectory />
